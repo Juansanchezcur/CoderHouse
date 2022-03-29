@@ -1,0 +1,32 @@
+.contenedorf {
+    background-color: black;
+    overflow-x: auto;
+    overflow-y: hidden;
+    grid-area: Footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    border-top: 3px solid;
+    border-color:rgb(151, 0, 0) ;
+  }
+  
+footer{ .listaDatos  {
+    font-weight: bolder; 
+    list-style:none; 
+    height: 55%; }                                     
+  
+    
+        ul .lista {
+  
+    margin: 10px;
+    padding-right: 12px ;
+    -webkit-text-stroke: 1px rgba(214, 127, 127, 0.5);}
+} 
+    
+.Iconos { 
+    list-style:none; 
+    margin: 10px;
+  }

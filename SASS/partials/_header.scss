@@ -1,0 +1,101 @@
+.contenedor { 
+  
+   grid-area: Header;
+   display: flex;
+    flex-direction:row; 
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 100vw;
+    max-height: 120px;
+    position: fixed;
+    padding-right: 10px;
+    background-color: black;
+    margin: 0;
+  }
+  
+  
+  
+  .logo {
+    width: 10%;
+  }
+  
+  .nombre {
+    font-size: 3em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    -webkit-text-stroke: 2px black;
+    display: inline-block;
+    height: 100px;
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+  }
+  
+  .navbar{
+    z-index: 1;
+    border-bottom: 1px solid;
+    border-color:rgb(151, 0, 0) ;
+    background-color: rgb(0, 0, 0);
+  padding-top: 0%!important;
+  padding-bottom: 0%!important;
+  width: 100vw;
+  }
+
+  .collapse{
+    justify-content:end
+
+  }
+  .nav-item{
+    background-color: black;
+  }
+  .nav-link:hover {
+    border-radius: 5px;
+    border: 1px solid;
+    border-color:rgb(151, 0, 0) ;
+  }
+  .TextoMenu{
+    margin: 0;
+  }
+  
+  .selected {
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color:rgb(122, 9, 15) ;
+    }
+                                        /* Animaciones del Header*/
+   
+    .bounce{
+        animation: bounce;
+        animation-duration: 1.5s;
+       
+      }
+      
+      @keyframes bounce {
+        25% {margin-top: 10px;}
+        30% {margin-top: 5px;}
+        50% {margin-top: 30px;}
+        55% {margin-top: 25px;}
+        75% {margin-top: 40px;}
+        90% {margin-top: 35px;} 
+      }
+      
+      
+      .coming{
+        animation: coming;
+        animation-duration: 1.5s;
+       
+      }
+      
+      @keyframes coming {
+        from {
+          margin-left: 100%;
+          width: 300%
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      
+      }
+        

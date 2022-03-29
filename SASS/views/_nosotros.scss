@@ -1,0 +1,31 @@
+.imagencostado { 
+    width: 35vw;
+    padding: 10px;
+  }
+  .centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+  .imagencostado{
+    width: 30vw;
+  } 
+  .sectionNosotros{
+    height: 250vh;
+    }
+  .articuloNosotros {
+    display: flex;
+    flex-direction: row;
+
+     p {
+      text-align: center;
+      margin: auto;
+      border: 2px solid;
+      color: #000000!important;
+      padding: 10px;
+      border-color: rgb(122, 9, 15);
+      border-radius: 5px;
+      background-color: rgb(187, 184, 184);}    
+  }
+ 
