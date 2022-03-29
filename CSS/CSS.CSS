@@ -231,6 +231,7 @@ h2 {
 .promotions__promotion__title {
   border-bottom: 2px solid;
   border-color: darkgoldenrod;
+  font-size: 1.5em;
   padding: 0; }
 
 .promotions__promotion__description {
