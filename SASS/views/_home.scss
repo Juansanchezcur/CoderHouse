@@ -1,13 +1,15 @@
+/*Index*/
 section {
     padding:15px;
-    max-height: 300vh;
     min-height: 100vh;
     display:flex;
     flex-direction: column;
     align-items: center;
     grid-area: Main;
     justify-content: space-around;
+    @include flex (column, space-around, center);
   }
+  
  
   
   h2 {

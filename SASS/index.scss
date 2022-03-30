@@ -1,16 +1,18 @@
-    /*Globales*/
+            /*Globales*/
+@import './misc/variables';
 @import './misc/normalize';
 @import './misc/mixins';
 
-    /*Partials*/
+            /*Partials*/
 @import './partials/header';
 @import './partials/footer';
 
-    /*Views*/
+            /*Views*/
 @import './views/home';
 @import './views/nosotros';
 @import './views/productos';
+@import './views/otrosProductos';
 @import './views/haceUnPedido';
 
-    /*Queries*/
+            /*Queries*/
 @import './misc/queries'; 

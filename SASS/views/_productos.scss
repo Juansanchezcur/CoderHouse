@@ -1,52 +1,9 @@
-/* El de otros productos tambíen lo puse acá, llevan el mismo formato*/
+/* Productos*/
 
 .imagenProductos{
   width: 40vw;
   padding: 3px;
   z-index: -1;
-}
-.row{
-  justify-content: center;
-}
-.section__promotions{
-  justify-content: center;
-  
   
 }
-.promotionsTitle{
-  width: 100vw;
-}
- .promotionsTitle__title{
-  color: darkgoldenrod!important;
-    }
-  
-    .promotionsTitle__subTitle{
-  text-align: center;
-  color: white!important;
-  border-bottom: 2px solid;
-  border-color: darkgoldenrod;
-  padding-bottom: 15px;
-  }
-  .promotions__promotion{
-    border: 2px solid;
-  border-color: darkgoldenrod;
-  margin:15px;
-  max-width: 70vw!important;
-  }
-  .promotions__promotion__title{
-  @extend .promotionsTitle__title;
-  border-bottom: 2px solid;
-  border-color: darkgoldenrod;
-  font-size: 1.5em;
-  padding: 0
-  }
-  
-  .promotions__promotion__description{
-  @extend .promotionsTitle__subTitle;
-  border-bottom: 0px;
-  }
-  .promotions__promotion__price{
-    font-size: 2em;
-    font-weight: bolder;
-  }
 

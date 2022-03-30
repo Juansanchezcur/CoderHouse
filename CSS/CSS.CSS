@@ -1,5 +1,24 @@
-@charset "UTF-8";
 /*Globales*/
+.background-negro {
+  background-color: Black;
+  height: 600px; }
+
+.background-azul {
+  background-color: #002FD1;
+  height: 600px; }
+
+.background-rojo {
+  background-color: #d10000;
+  height: 600px; }
+
+.background-amarillo {
+  background-color: #fffb00;
+  height: 600px; }
+
+.background-blanco {
+  background-color: #ffffff;
+  height: 600px; }
+
 /*Normalize*/
 * {
   margin: 0;
@@ -21,7 +40,9 @@ html {
   gap: 0px 0px;
   grid-template-areas: "Header Header Header" "Main Main Main" "Footer Footer Footer"; }
 
+/*Mixins*/
 /*Partials*/
+/*Header*/
 .contenedor {
   grid-area: Header;
   display: flex;
@@ -109,6 +130,7 @@ html {
     margin-left: 0%;
     width: 100%; } }
 
+/*Footer*/
 .contenedorf {
   background-color: black;
   overflow-x: auto;
@@ -135,18 +157,25 @@ footer ul .lista {
 
 .Iconos {
   list-style: none;
-  margin: 10px; }
+  margin: 20px; }
+  .Iconos li {
+    padding: 5px; }
 
 /*Views*/
+/*Index*/
 section {
   padding: 15px;
-  max-height: 300vh;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   grid-area: Main;
-  justify-content: space-around; }
+  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0; }
 
 h2 {
   font-size: 3em;
@@ -168,6 +197,7 @@ h2 {
   border-radius: 5px;
   background-color: #bbb8b8; }
 
+/*Nosotros*/
 .imagencostado {
   width: 35vw;
   padding: 10px; }
@@ -197,12 +227,13 @@ h2 {
     border-radius: 5px;
     background-color: #bbb8b8; }
 
-/* El de otros productos tambíen lo puse acá, llevan el mismo formato*/
+/* Productos*/
 .imagenProductos {
   width: 40vw;
   padding: 3px;
   z-index: -1; }
 
+/*Otros Productos/Ofertas*/
 .row {
   justify-content: center; }
 
@@ -241,6 +272,7 @@ h2 {
   font-size: 2em;
   font-weight: bolder; }
 
+/*Hace un Pedido*/
 form div {
   padding: 10px; }
   form div select {

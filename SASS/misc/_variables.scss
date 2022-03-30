@@ -1,0 +1,21 @@
+$backgrounds:(
+negro:Black,
+azul: #002FD1,
+rojo: #d10000,
+amarillo:#fffb00,
+blanco:#ffffff,
+);
+
+$heights:(
+alto: 600px,
+medio: 400px,
+bajo: 300px,
+);
+
+@each $var, $val in $backgrounds {
+    .background-#{$var}{
+        background-color: #{$val};
+        height: map-get($heights, alto) ;
+    }
+    
+}
