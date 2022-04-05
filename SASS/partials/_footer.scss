@@ -16,14 +16,17 @@
   
 footer{ .listaDatos  {
     font-weight: bolder; 
-    list-style:none; 
-    height: 55%; }                                     
+    list-style:none;
+    height: 80%; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0%;
+    padding: 0%;
+  }                                     
   
     
         ul .lista {
-  
-    margin: 10px;
-    padding-right: 12px ;
     -webkit-text-stroke: 1px rgba(214, 127, 127, 0.5);}
 } 
     

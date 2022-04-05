@@ -49,6 +49,7 @@ html {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
   width: 100vw;
   max-height: 120px;
   position: fixed;
@@ -148,11 +149,14 @@ html {
 footer .listaDatos {
   font-weight: bolder;
   list-style: none;
-  height: 55%; }
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0%;
+  padding: 0%; }
 
 footer ul .lista {
-  margin: 10px;
-  padding-right: 12px;
   -webkit-text-stroke: 1px rgba(214, 127, 127, 0.5); }
 
 .Iconos {
@@ -228,10 +232,59 @@ h2 {
     background-color: #bbb8b8; }
 
 /* Productos*/
-.imagenProductos {
-  width: 40vw;
-  padding: 3px;
-  z-index: -1; }
+.section__products {
+  justify-content: center; }
+
+.inline-block {
+  display: inline-block;
+  width: 40vw !important; }
+
+.productsTitle {
+  width: 100vw; }
+
+.productsTitle__title, .products__product__title {
+  color: darkgoldenrod !important;
+  font-size: 2.5em;
+  margin-top: 20vh; }
+
+.productsTitle__subTitle, .products__product__ingredients {
+  text-align: center;
+  color: white !important;
+  border-bottom: 2px solid;
+  border-color: darkgoldenrod;
+  padding-bottom: 15px; }
+
+.products__product {
+  border: 2px solid;
+  border-color: darkgoldenrod;
+  margin: 15px;
+  max-width: 90vw; }
+
+.products__product__title {
+  border-bottom: 2px solid;
+  border-color: darkgoldenrod;
+  font-size: 1.5em;
+  padding: 0; }
+
+.products__product__ingredients {
+  border-bottom: 0px;
+  padding: 3px; }
+
+.products__product__price {
+  font-size: 2em;
+  font-weight: bolder; }
+
+.products__chips {
+  font-weight: bolder;
+  color: darkgoldenrod !important;
+  text-align: center; }
+
+.extras__product {
+  color: white !important;
+  font-size: 0.8em; }
+
+.extras__price {
+  font-weight: bolder; }
 
 /*Otros Productos/Ofertas*/
 .row {
@@ -244,7 +297,8 @@ h2 {
   width: 100vw; }
 
 .promotionsTitle__title, .promotions__promotion__title {
-  color: darkgoldenrod !important; }
+  color: darkgoldenrod !important;
+  font-size: 3em; }
 
 .promotionsTitle__subTitle, .promotions__promotion__description {
   text-align: center;
@@ -283,7 +337,8 @@ form div {
 /*Queries*/
 @media screen and (max-width: 480px) {
   .nombre {
-    font-size: 1.6em !important; }
+    font-size: 1.6em !important;
+    top: 30%; }
   .nav-link {
     font-size: 13px;
     padding: 5px !important; }
@@ -301,28 +356,29 @@ form div {
     margin: 5px; } }
 
 @media screen and (max-width: 768px) {
+  .hamburguers {
+    flex-direction: column; }
+  .inline-block {
+    width: 100vw !important; } }
+
+@media screen and (max-width: 768px) {
   .nombre {
     font-size: 2em; }
   * {
     font-size: 18px; } }
 
-@media screen and (max-width: 941px) {
+@media screen and (max-width: 1100px) {
   .articuloNosotros {
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .imagenProductos {
-    width: 90vw;
-    padding: 3px; }
   .imagencostado {
     width: 70vw; }
   .parrafo2 {
     order: 1; }
-  .imagenPromociones {
-    width: 90vw; } }
+  .nombre {
+    font-size: 2.5em; } }
 
 @media screen and (min-width: 769px) and (max-width: 941px) {
   .sectionNosotros {
-    height: 200vh; }
-  .nombre {
-    font-size: 2.5em; } }
+    height: 200vh; } }
