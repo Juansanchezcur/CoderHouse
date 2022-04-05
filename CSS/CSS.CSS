@@ -182,7 +182,7 @@ section {
   gap: 0; }
 
 h2 {
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   padding: 15px; }
 
@@ -299,7 +299,7 @@ h2 {
 
 .promotionsTitle__title, .promotions__promotion__title {
   color: darkgoldenrod !important;
-  font-size: 3em; }
+  font-size: 2.5em; }
 
 .promotionsTitle__subTitle, .promotions__promotion__description {
   text-align: center;
