@@ -264,7 +264,8 @@ h2 {
   border-bottom: 2px solid;
   border-color: darkgoldenrod;
   font-size: 1.5em;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
 
 .products__product__ingredients {
   border-bottom: 0px;
