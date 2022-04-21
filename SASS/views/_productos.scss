@@ -15,9 +15,9 @@ section video {
   justify-content: center;
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0.5);
-  min-width: 100vw;
   height: 100%;
-  
+  padding: 0%;
+  overflow-x: hidden;
 }
 .inline-block{
   display: inline-block;

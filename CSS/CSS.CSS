@@ -28,15 +28,14 @@
   font-size: 20px; }
 
 html {
-  position: relative;
-  max-width: 100vw; }
+  position: relative; }
 
 .contenedorEntero {
   background-image: url(../IMG/background-section.jpg);
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 10vh 1fr 20vh;
+  grid-template-rows: 80px auto 20vh;
   gap: 0px 0px;
   grid-template-areas: "Header Header Header" "Main Main Main" "Footer Footer Footer"; }
 
@@ -50,7 +49,6 @@ html {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  max-height: 120px;
   position: fixed;
   padding-right: 10px;
   background-color: black;
@@ -144,7 +142,8 @@ html {
   bottom: 0;
   width: 100%;
   border-top: 3px solid;
-  border-color: #970000; }
+  border-color: #970000;
+  padding: 10px; }
 
 footer .listaDatos {
   font-weight: bolder;
@@ -179,7 +178,8 @@ section {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 0; }
+  gap: 0;
+  position: relative; }
 
 h2 {
   font-size: 2.5em;
@@ -245,8 +245,9 @@ section video {
   justify-content: center;
   font-weight: bolder;
   background-color: rgba(0, 0, 0, 0.5);
-  min-width: 100vw;
-  height: 100%; }
+  height: 100%;
+  padding: 0%;
+  overflow-x: hidden; }
 
 .inline-block {
   display: inline-block;
@@ -307,7 +308,8 @@ section video {
 .section__promotions {
   justify-content: center;
   font-weight: bolder;
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow-x: hidden; }
 
 .promotionsTitle {
   width: 100vw; }
@@ -353,8 +355,7 @@ form div {
 /*Queries*/
 @media screen and (max-width: 480px) {
   .nombre {
-    font-size: 1.6em !important;
-    top: 30%; }
+    font-size: 1.6em !important; }
   .nav-link {
     font-size: 13px;
     padding: 5px !important; }

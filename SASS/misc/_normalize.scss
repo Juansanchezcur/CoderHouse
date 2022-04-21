@@ -11,9 +11,8 @@
   }
 
 html {
-    position: relative;
-    max-width: 100vw;
-    
+    position: relative; 
+     
 }
 
 .contenedorEntero {
@@ -21,13 +20,15 @@ html {
     height: 100%;
     display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 10vh 1fr 20vh; 
+  grid-template-rows: 80px auto 20vh; 
   gap: 0px 0px; 
   grid-template-areas: 
     "Header Header Header"
     "Main Main Main"
     "Footer Footer Footer";
-    
   }
+
+  
+  
  
   

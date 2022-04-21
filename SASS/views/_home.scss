@@ -8,6 +8,7 @@ section {
     grid-area: Main;
     justify-content: space-around;
     @include flex (column, space-around, center);
+    position: relative;
   }
   
  
