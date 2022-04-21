@@ -357,6 +357,9 @@ form div {
 
 /*Queries*/
 @media screen and (max-width: 480px) {
+  .nombre {
+    font-size: 1.6em !important;
+    font-weight: bolder; }
   .nav-link {
     font-size: 13px;
     padding: 5px !important; }
