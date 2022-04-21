@@ -1,6 +1,7 @@
 /*Nosotros*/
 .sectionNosotros{
   min-height: 150vh;
+  max-width: 100vw;
 }
 .imagencostado { 
     width: 35vw;
@@ -14,6 +15,7 @@
   }
   .imagencostado{
     width: 30vw;
+    
   } 
 
   .articuloNosotros {
@@ -22,11 +24,11 @@
 
      p {
       text-align: start;
-      margin: auto;
+      margin: 50px 0px 100px 0px;
       border: 2px solid;
       color: #000000!important;
       padding: 10px;
-      border-color: rgb(122, 9, 15);
+      border-color: rgb(219, 4, 4);
       border-radius: 5px;
       background-color: rgb(187, 184, 184);}    
   }

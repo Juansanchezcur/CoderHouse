@@ -203,7 +203,8 @@ h2 {
 
 /*Nosotros*/
 .sectionNosotros {
-  min-height: 150vh; }
+  min-height: 150vh;
+  max-width: 100vw; }
 
 .imagencostado {
   width: 35vw;
@@ -223,11 +224,11 @@ h2 {
   flex-direction: row; }
   .articuloNosotros p {
     text-align: start;
-    margin: auto;
+    margin: 50px 0px 100px 0px;
     border: 2px solid;
     color: #000000 !important;
     padding: 10px;
-    border-color: #7a090f;
+    border-color: #db0404;
     border-radius: 5px;
     background-color: #bbb8b8; }
 
@@ -392,11 +393,14 @@ form div {
   .articuloNosotros {
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    width: 95%; }
   .sectionNosotros {
-    min-height: 200vh; }
+    min-height: 260vh;
+    padding: 0; }
   .imagencostado {
-    width: 70vw; }
+    width: 90vw;
+    margin-top: 100px; }
   .parrafo2 {
     order: 1; }
   .nombre {

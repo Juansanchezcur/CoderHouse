@@ -58,13 +58,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 95%;
       }
       .sectionNosotros{
-        min-height: 200vh;
+        min-height: 260vh;
+        padding: 0;
         }
 
       .imagencostado{
-        width: 70vw;
+        width: 90vw;
+        margin-top: 100px;
       }
       .parrafo2{
         order: 1;
