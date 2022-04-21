@@ -36,7 +36,7 @@ html {
   height: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 1fr 20vh;
+  grid-template-rows: 10vh 1fr 20vh;
   gap: 0px 0px;
   grid-template-areas: "Header Header Header" "Main Main Main" "Footer Footer Footer"; }
 
@@ -50,12 +50,10 @@ html {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  width: 100vw;
   max-height: 120px;
   position: fixed;
   padding-right: 10px;
   background-color: black;
-  margin: 0;
   z-index: 1; }
 
 .logo {
@@ -86,10 +84,12 @@ html {
 .nav-item {
   background-color: black; }
 
-.nav-link:hover {
-  border-radius: 5px;
-  border: 1px solid;
-  border-color: #970000; }
+.nav-link {
+  margin: 5px; }
+  .nav-link:hover {
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #970000; }
 
 .TextoMenu {
   margin: 0; }
@@ -202,6 +202,9 @@ h2 {
   background-color: #bbb8b8; }
 
 /*Nosotros*/
+.sectionNosotros {
+  min-height: 150vh; }
+
 .imagencostado {
   width: 35vw;
   padding: 10px; }
@@ -215,14 +218,11 @@ h2 {
 .imagencostado {
   width: 30vw; }
 
-.sectionNosotros {
-  height: 250vh; }
-
 .articuloNosotros {
   display: flex;
   flex-direction: row; }
   .articuloNosotros p {
-    text-align: center;
+    text-align: start;
     margin: auto;
     border: 2px solid;
     color: #000000 !important;
@@ -232,8 +232,21 @@ h2 {
     background-color: #bbb8b8; }
 
 /* Productos*/
+section video {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: -1; }
+
 .section__products {
-  justify-content: center; }
+  justify-content: center;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5);
+  min-width: 100vw;
+  height: 100%; }
 
 .inline-block {
   display: inline-block;
@@ -292,7 +305,9 @@ h2 {
   justify-content: center; }
 
 .section__promotions {
-  justify-content: center; }
+  justify-content: center;
+  font-weight: bolder;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .promotionsTitle {
   width: 100vw; }
@@ -373,13 +388,11 @@ form div {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .sectionNosotros {
+    min-height: 200vh; }
   .imagencostado {
     width: 70vw; }
   .parrafo2 {
     order: 1; }
   .nombre {
     font-size: 2.5em; } }
-
-@media screen and (min-width: 769px) and (max-width: 941px) {
-  .sectionNosotros {
-    height: 200vh; } }

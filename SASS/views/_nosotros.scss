@@ -1,4 +1,7 @@
 /*Nosotros*/
+.sectionNosotros{
+  min-height: 150vh;
+}
 .imagencostado { 
     width: 35vw;
     padding: 10px;
@@ -12,15 +15,13 @@
   .imagencostado{
     width: 30vw;
   } 
-  .sectionNosotros{
-    height: 250vh;
-    }
+
   .articuloNosotros {
     display: flex;
     flex-direction: row;
 
      p {
-      text-align: center;
+      text-align: start;
       margin: auto;
       border: 2px solid;
       color: #000000!important;

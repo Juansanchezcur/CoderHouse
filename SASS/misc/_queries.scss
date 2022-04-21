@@ -58,6 +58,9 @@
         flex-direction: column;
         align-items: center;
       }
+      .sectionNosotros{
+        min-height: 200vh;
+        }
 
       .imagencostado{
         width: 70vw;
@@ -73,11 +76,4 @@
     
     
     
-    @media screen and (min-width:769px) and (max-width:941px)
-    {   
-    .sectionNosotros{
-        height: 200vh;
-        }
-
-      
-    }
+    
