@@ -356,10 +356,12 @@ form div {
     color: #000000 !important; }
 
 /*Queries*/
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 415px) {
   .nombre {
-    font-size: 1.6em !important;
-    font-weight: bolder; }
+    font-size: 2em !important;
+    font-weight: bolder; } }
+
+@media screen and (max-width: 480px) {
   .nav-link {
     font-size: 13px;
     padding: 5px !important; }
@@ -383,8 +385,6 @@ form div {
     width: 100vw !important; } }
 
 @media screen and (max-width: 768px) {
-  .nombre {
-    font-size: 2em; }
   * {
     font-size: 18px; } }
 
