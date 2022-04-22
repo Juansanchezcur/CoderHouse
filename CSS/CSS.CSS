@@ -357,13 +357,9 @@ form div {
     color: #000000 !important; }
 
 /*Queries*/
-@media screen and (max-width: 360px) {
-  .nombre {
-    font-size: 1.6em !important; } }
-
 @media screen and (max-width: 415px) {
   .nombre {
-    font-size: 2em !important;
+    font-size: 1.7em !important;
     font-weight: bolder; } }
 
 @media screen and (max-width: 480px) {
