@@ -1,10 +1,16 @@
 
+@media screen and (max-width:360px){ 
+  .nombre {
+    font-size: 1.6em!important;
+  }
+}
 @media screen and (max-width:415px){ 
   .nombre {
     font-size: 2em!important;
     font-weight: bolder;
   }
 }
+
 @media screen and (max-width:480px){ 
   
   .nav-link{
@@ -40,10 +46,7 @@
       .inline-block{
         width: 100vw!important;
       }  
-    }
-    
-    @media screen and (max-width:768px){   
-    
+   
     *{
       font-size: 18px;
     }

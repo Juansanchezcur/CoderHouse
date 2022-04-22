@@ -357,6 +357,10 @@ form div {
     color: #000000 !important; }
 
 /*Queries*/
+@media screen and (max-width: 360px) {
+  .nombre {
+    font-size: 1.6em !important; } }
+
 @media screen and (max-width: 415px) {
   .nombre {
     font-size: 2em !important;
@@ -383,9 +387,7 @@ form div {
   .hamburguers {
     flex-direction: column; }
   .inline-block {
-    width: 100vw !important; } }
-
-@media screen and (max-width: 768px) {
+    width: 100vw !important; }
   * {
     font-size: 18px; } }
 
