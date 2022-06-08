@@ -1,0 +1,1 @@
+//acá se mandarían los datos que agrega abajo del carrito
