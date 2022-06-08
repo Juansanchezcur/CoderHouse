@@ -382,16 +382,17 @@ form div {
     padding: 5px !important; }
   h2 {
     font-size: 2em; }
-  table th {
-    font-size: 14px; }
-  table td {
-    font-size: 13px; }
-    table td img {
-      width: 80px; }
-    table td li {
-      font-size: 12px; }
-  footer ul .lista {
-    margin: 5px; } }
+  .eliminar {
+    font-size: 13px !important;
+    padding: 5px !important; }
+  thead tr th {
+    font-size: 13px !important;
+    padding: 5px !important; }
+  tbody tr td {
+    font-size: 12px !important; } }
+
+footer ul .lista {
+  margin: 5px; }
 
 @media screen and (max-width: 768px) {
   .hamburguers {

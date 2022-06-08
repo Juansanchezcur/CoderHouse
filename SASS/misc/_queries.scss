@@ -18,25 +18,26 @@
        font-size: 2em;
       }
     
-    table{  th{
-      font-size: 14px;
-      }
-             td{
-                font-size: 13px;
-                img{
-                    width: 80px;
-                    }
-                 li{
-                font-size: 12px;
-                }
-            }
+    .eliminar{
+      font-size: 13px!important;
+      padding: 5px!important;
+    }
+    thead tr th{
+      font-size: 13px!important;
+      padding: 5px!important;
+    }
+
+    tbody  tr td {
+      font-size: 12px!important;
+    
+    }
      
     }
     footer ul .lista {
     
       margin: 5px;    
       }
-    }
+    
     @media screen and (max-width:768px){ 
       .hamburguers{ flex-direction: column;}
       .inline-block{
