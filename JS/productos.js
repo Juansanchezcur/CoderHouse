@@ -167,6 +167,8 @@ for (let i=0; i<10; i++){
     let subtotal=productos[i].subtotal
     let index=carrito.findIndex(producto=>producto.id==productos[i].id)
     
+    // Varía la acción si el producto ya estaba o no dentro del carrito
+
     if (index==-1){
     let productoC=new productoCarrito(id, nombre, precio, cantidad, subtotal)
     carrito.push(productoC)
@@ -185,6 +187,7 @@ for (let i=0; i<10; i++){
     padreProducto.appendChild(botonCarrito)
     
     //se ordenan según la ubicación donde van
+    
     if (i<5){
         let hamburgersDiv=document.getElementById("hamburgers")
         

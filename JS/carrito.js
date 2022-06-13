@@ -1,6 +1,7 @@
 let carrito= JSON.parse(localStorage.getItem("Productos"))
 let total=0
 let tbody=document.querySelector("#tbody")
+
 //Llena el carrito con los productos que tengo almacenados
 function rellenarCarrito(carrito){
     
@@ -13,7 +14,10 @@ function rellenarCarrito(carrito){
     tbody.appendChild(row)
 } 
 }
+
+//Se manipula el total del carrito
 let parrafoTotal=document.getElementById("parrafoTotal")
+
 function calcularTotal(carrito){
     total=0
     for(let producto of carrito){
@@ -23,9 +27,9 @@ function calcularTotal(carrito){
         parrafoTotal.innerHTML=`Total: ${total}`
         
 }
-if(total==0){
-    parrafoTotal.innerHTML=`Total: 0`
-}
+
+let resultadoTotal= total==0? true: false
+resultadoTotal && (parrafoTotal.innerHTML=`Total: 0`)
 }
 
 rellenarCarrito(carrito)
@@ -45,8 +49,14 @@ calcularTotal(carrito)
 localStorage.setItem("Productos", JSON.stringify(carrito))
 console.log(e.target.id)
 }
+
 //botón submit
+imputNombre=document.getElementById("Nombre")
+imputApellido=document.getElementById("Apellido")
+imputEmail=document.getElementById("Email")
+imputDireccion=document.getElementById("Direccion")
+
 btnsubmit=document.getElementById("submit")
 btnsubmit.addEventListener("click", ()=>{
-    alert ("Gracias por elegirnos, en seguida nos comunicaremos contigo")
+imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ?   alert ("Gracias por elegirnos, en seguida nos comunicaremos contigo."): alert ("Por favor, ingresa todos los datos")
 })
