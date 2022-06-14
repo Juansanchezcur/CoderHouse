@@ -58,5 +58,30 @@ imputDireccion=document.getElementById("Direccion")
 
 btnsubmit=document.getElementById("submit")
 btnsubmit.addEventListener("click", ()=>{
-imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ?   alert ("Gracias por elegirnos, en seguida nos comunicaremos contigo."): alert ("Por favor, ingresa todos los datos")
+imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario() : faltanDatos()
 })
+
+function faltanDatos(){
+    event.preventDefault()
+    Swal.fire({
+        title: 'Error!',
+        text: 'Por favor, ingresa todos los datos',
+        icon: 'error',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: "#ffee0085"
+      })
+    
+    
+}
+
+function enviarFormulario(){
+    event.preventDefault()
+    Swal.fire({
+        title: 'Perfecto!',
+        text: 'Gracias por elegirnos, en seguida nos comunicaremos contigo.',
+        icon: 'success',
+        confirmButtonText: 'Ok',
+        confirmButtonColor: "#ffee0085"
+      })
+    
+}

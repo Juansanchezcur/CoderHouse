@@ -86,6 +86,24 @@ for (let i=0; i<2; i++){
         }
         
         localStorage.setItem("Productos", JSON.stringify(carrito))
+
+        //Notificacion Tastify
+        
+        Toastify({
+        text: "Producto Agregado",
+        duration: 2000,
+        position: "center",
+        style: {
+        boxShadow: "none",
+        background: "black",
+        border: "1px solid #ffee00"
+        },
+        offset: 
+        {y: 100
+        }
+        }
+        )
+        .showToast()
         
         })    }
 
