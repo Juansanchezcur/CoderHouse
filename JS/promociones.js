@@ -1,26 +1,4 @@
 
-    //Promociones
-const promo1={
-    id:11,
-    nombre: "x2 Simple Burger",
-    ingredientes:"Precio unitario $280. Llevate 2 riquísimas Simple Burger por tan solo:",
-    precio:  480, 
-    cantidad: 1,
-    subtotal: 480
-}
-
-const promo2={
-    id:12,
-    nombre: "x2 Fugazza",
-    ingredientes:"Precio unitario $220. Llevate 2 riquísimas Fugazzas por tan solo:",
-    precio:  350, 
-    cantidad: 1,
-    subtotal: 350
-}
-    
-    let promociones=[promo1, promo2]
-
-   
 
     //Se crean las cajas de los productos en la sección "Productos" y "Promociones"
 
