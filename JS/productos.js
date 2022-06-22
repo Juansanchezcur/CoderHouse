@@ -7,10 +7,10 @@ async function traerProductos(){
     return datos
   }
     productos.then(lista=>{
-     console.log(lista.productos) 
+    
     const {productos}=lista  
   for(let producto of productos){
-      console.log(producto.tipo)
+     
       const { id, nombre, precio, cantidad, subtotal, tipo }=producto
       const padreProducto=document.createElement("div")
       const nombreProducto=document.createElement("h3")
