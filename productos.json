@@ -1,0 +1,86 @@
+{
+
+"productos" : [
+    
+    { "id":1,
+    "nombre": "Burger House  ",
+    "ingredientes":"Pan de queso, blend de carne de 160gr, cheddar, panceta, cebolla morada, rúcula, tomate, cebolla caramelizada y pepinillos",
+    "precio":  340, 
+    "cantidad": 1,
+    "subtotal": 340
+    },
+    {
+    "id":2,
+    "nombre": "Crispy Onion  ",
+    "ingredientes":"Pan de queso, blend de carne de 100gr x2, aros de cebolla, panceta x2, cheddar x2, salsa barbacoa y morrón al vinagre",
+    "precio": 360, 
+    "cantidad": 1,
+    "subtotal": 360
+    },
+    {
+    "id":3,
+    "nombre": "Doble Smash   ",
+    "ingredientes":"Pan de papa, blend de carne de 90gr x2, panceta x2, cheddar x2, salsa barbacoa, cebolla caramelizada y pepinillos",
+    "precio": 300, 
+    "cantidad": 1,
+    "subtotal": 300
+    },
+    {
+    "id":4,
+    "nombre": "Simple Burger ",
+    "ingredientes":"Pan de semilla, blend de carne de 120gr, panceta, muzarella, huevo a la plancha, tomate y lechuga crespa",
+    "precio": 280, 
+    "cantidad": 1,
+    "subtotal":280
+    },
+    {
+    "id":5,
+    "nombre": "Simple Cheddar",
+    "ingredientes":"Pan de papa, blend de carne de 120gr, cheddar, panceta y salsa de la casa",
+    "precio": 260, 
+    "cantidad": 1,
+    "subtotal": 260
+    },
+    {
+    "id":6,
+    "nombre": "Margarita     ",
+    "ingredientes":"Muzzarella en bola y albahaca",
+    "precio":  300, 
+    "cantidad": 1, 
+    "subtotal":300
+    },
+    {
+    "id":7,
+    "nombre": "Fugazza       ",
+    "ingredientes":"Muzzarella, cebolla blanca y orégano",
+    "precio":  220, 
+    "cantidad": 1,
+    "subtotal":220
+    },
+    {
+    "id":8,
+    "nombre": "Serrana       ",
+    "ingredientes":"Muzzarella, jamón crudo, rúcula y lascas de parmesano  ",
+    "precio":  290, 
+    "cantidad": 1,
+    "subtotal":290 
+    },
+    {
+    "id":9,
+    "nombre": "Cuatro Quesos ",
+    "ingredientes":"Muzzarella, parmesano, queso azul y cheddar",
+    "precio":  280, 
+    "cantidad": 1,
+    "subtotal":280 
+    },
+    {
+    "id":10,
+    "nombre": "La Carolina   ",
+    "ingredientes":"Muzzarella, cheddar, panceta",
+    "precio":  250, 
+    "cantidad": 1,
+    "subtotal": 250
+    }
+
+]
+}

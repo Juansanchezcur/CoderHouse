@@ -1,4 +1,4 @@
-let carrito= JSON.parse(localStorage.getItem("Productos"))
+let carrito= JSON.parse(localStorage.getItem("Productos")) ||[]
 let total=0
 let tbody=document.querySelector("#tbody")
 
@@ -58,10 +58,10 @@ imputDireccion=document.getElementById("Direccion")
 
 btnsubmit=document.getElementById("submit")
 btnsubmit.addEventListener("click", ()=>{
-imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario() : faltanDatos()
+imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario(event) : faltanDatos(event)
 })
 
-function faltanDatos(){
+function faltanDatos(event){
     event.preventDefault()
     Swal.fire({
         title: 'Error!',
@@ -74,7 +74,7 @@ function faltanDatos(){
     
 }
 
-function enviarFormulario(){
+function enviarFormulario(event){
     event.preventDefault()
     Swal.fire({
         title: 'Perfecto!',

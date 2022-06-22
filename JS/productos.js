@@ -179,7 +179,7 @@ for (let i=0; i<10; i++){
     
     localStorage.setItem("Productos", JSON.stringify(carrito))
 
-    //Notificacion Tastify
+    //Notificación Toastify
     
     Toastify({
     text: "Producto Agregado",
