@@ -9,7 +9,7 @@ function rellenarCarrito(carrito){
     for(let producto of carrito){
     let row=document.createElement("tr")
     
-    row.innerHTML=`<td>${producto.nombre}</td><td>$${producto.precio}</td><td>${producto.cantidad}</td><td>$${producto.subtotal}</td><td><button class="eliminar btn btn-warning" id="${producto.id}">Eliminar</button></td>`
+    row.innerHTML=`<td class="productRow">${producto.nombre}</td><td class="productRow">$${producto.precio}</td><td class="productRow">${producto.cantidad}</td><td class="productRow">$${producto.subtotal}</td><td class="productRow"><button class="eliminar btn btn-warning" id="${producto.id}">Eliminar</button></td>`
     
     tbody.appendChild(row)
 } 
@@ -58,14 +58,19 @@ imputDireccion=document.getElementById("Direccion")
 
 btnsubmit=document.getElementById("submit")
 btnsubmit.addEventListener("click", ()=>{
-    imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario(event) : faltanDatos(event)
+    if (carrito.length>0){
+        imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario(event) : mensajeError(event, 'Por favor, ingresa todos los datos.')
+    } else {
+        mensajeError(event,'Tu carrito está vacío, agrega algun producto.')
+
+    }
 })
 
-function faltanDatos(event){
+function mensajeError(event, mensaje){
     event.preventDefault()
     Swal.fire({
         title: 'Error!',
-        text: 'Por favor, ingresa todos los datos',
+        text: mensaje,
         icon: 'error',
         confirmButtonText: 'Ok',
         confirmButtonColor: "#ffee0085"
@@ -83,5 +88,15 @@ function enviarFormulario(event){
         confirmButtonText: 'Ok',
         confirmButtonColor: "#ffee0085"
       })
-    
+    carrito=[]
+    localStorage.setItem("Productos", JSON.stringify(carrito))
+    let rows=document.querySelectorAll(".productRow")
+    console.log(rows)
+    rows.forEach(box => {
+        box.remove() 
+    })
 }
+
+
+    
+    

@@ -370,6 +370,9 @@ form div {
   border-radius: 5px;
   margin: 2em auto; }
 
+#thboton {
+  min-width: 5vw; }
+
 /*Queries*/
 @media screen and (max-width: 415px) {
   .nombre {
