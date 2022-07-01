@@ -28,8 +28,8 @@ function calcularTotal(carrito){
         
 }
 
-let resultadoTotal= total==0? true: false
-resultadoTotal && (parrafoTotal.innerHTML=`Total: 0`)
+    let resultadoTotal= total==0? true: false
+    resultadoTotal && (parrafoTotal.innerHTML=`Total: 0`)
 }
 
 rellenarCarrito(carrito)
@@ -38,16 +38,16 @@ rellenarCarrito(carrito)
 //Botones Eliminar producto del carrito
 let botonesEliminar= document.querySelectorAll(".eliminar")
 botonesEliminar.forEach(elemento=>{
-elemento.addEventListener("click", eliminarProducto)
+    elemento.addEventListener("click", eliminarProducto)
 })
 function eliminarProducto(e){
 
-let index =carrito.findIndex(producto=> producto.id==e.target.id)
-carrito.splice(index, 1)
-e.target.parentNode.parentNode.remove();
-calcularTotal(carrito)
-localStorage.setItem("Productos", JSON.stringify(carrito))
-console.log(e.target.id)
+    let index =carrito.findIndex(producto=> producto.id==e.target.id)
+    carrito.splice(index, 1)
+    e.target.parentNode.parentNode.remove();
+    calcularTotal(carrito)
+    localStorage.setItem("Productos", JSON.stringify(carrito))
+    console.log(e.target.id)
 }
 
 //botón submit
@@ -58,7 +58,7 @@ imputDireccion=document.getElementById("Direccion")
 
 btnsubmit=document.getElementById("submit")
 btnsubmit.addEventListener("click", ()=>{
-imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario(event) : faltanDatos(event)
+    imputNombre.value && imputApellido.value && imputEmail.value && imputDireccion.value ? enviarFormulario(event) : faltanDatos(event)
 })
 
 function faltanDatos(event){
