@@ -94,6 +94,7 @@ function enviarFormulario(event){
     console.log(rows)
     rows.forEach(box => {
         box.remove() 
+        calcularTotal(carrito)
     })
 }
 
