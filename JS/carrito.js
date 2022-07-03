@@ -95,6 +95,10 @@ function enviarFormulario(event){
     rows.forEach(box => {
         box.remove() 
         calcularTotal(carrito)
+        let imputs= document.querySelectorAll(".form-control")
+        for( let imput of imputs){
+         imput.value=""   
+        }
     })
 }
 
